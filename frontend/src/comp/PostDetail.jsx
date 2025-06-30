@@ -16,7 +16,7 @@ const PostDetail = () => {
   const fetchPost = () => {
     setIsLoading(true);
     axios
-      .get(`http://localhost:3030/posts/${id}`, {
+      .get(`${process.env.REACT_APP_API_URL}/posts/${id}`, {
         headers: { token: token, "Content-Type": "application/json" },
       })
       .then((response) => {
@@ -52,7 +52,7 @@ const PostDetail = () => {
 
     axios
       .post(
-        `http://localhost:3030/posts/${id}/like`,
+        `${process.env.REACT_APP_API_URL}/posts/${id}/like`,
         {},
         {
           headers: { token: token, "Content-Type": "application/json" },

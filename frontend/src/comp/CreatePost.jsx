@@ -25,7 +25,7 @@ const CreatePost = () => {
   useEffect(() => {
     if (postId) {
       axios
-        .get(`http://localhost:3030/getpost/${postId}`, {
+        .get(`${process.env.REACT_APP_API_URL}/getpost/${postId}`, {
           headers: { token },
         })
         .then((res) => {
@@ -57,7 +57,7 @@ const CreatePost = () => {
     if (postId) {
       // UPDATE existing post
       axios
-        .put(`http://localhost:3030/updatepost/${postId}`, {
+        .put(`${process.env.REACT_APP_API_URL}/updatepost/${postId}`, {
           title: input.title,
           message: input.message,
           thumbnail: input.thumbnail,
@@ -75,7 +75,7 @@ const CreatePost = () => {
     } else {
       // CREATE new post
       axios
-        .post("http://localhost:3030/create", input, {
+        .post(`${process.env.REACT_APP_API_URL}/create`, input, {
           headers: { token, "Content-Type": "application/json" },
         })
         .then((response) => {

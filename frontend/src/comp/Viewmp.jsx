@@ -18,7 +18,7 @@ const Viewmypost = () => {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:3030/viewmypost", {
+      .get(`${process.env.REACT_APP_API_URL}/viewmypost`, {
         headers: { token: token, "Content-Type": "application/json" },
       })
       .then((response) => {
@@ -52,7 +52,7 @@ const Viewmypost = () => {
   const handleDelete = (id) => {
     if (window.confirm("Are you sure you want to delete this post?")) {
       axios
-        .delete(`http://localhost:3030/deletepost/${id}`, {
+        .delete(`${process.env.REACT_APP_API_URL}/deletepost/${id}`, {
           headers: { token: token },
         })
         .then((res) => {
@@ -72,7 +72,7 @@ const Viewmypost = () => {
 
     if (window.confirm(confirmMessage)) {
       axios
-        .put(`http://localhost:3030/makeprivate/${id}`, {}, {
+        .put(`${process.env.REACT_APP_API_URL}/makeprivate/${id}`, {}, {
           headers: { token },
         })
         .then((res) => {

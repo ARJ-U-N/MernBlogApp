@@ -17,7 +17,7 @@ const Signin = () => {
 
   const handleSignIn = () => {
     axios
-      .post("http://localhost:3030/signIn", input)
+      .post(`${process.env.REACT_APP_API_URL}/signIn`, input)
       .then((response) => {
         if (response.data.status === "incorrect password") {
           alert("Invalid password");

@@ -14,7 +14,7 @@ const UserProfile = () => {
   useEffect(() => {
     
     axios
-      .get(`http://localhost:3030/publicprofile/${userId}`, {
+      .get(`${process.env.REACT_APP_API_URL}/publicprofile/${userId}`, {
         headers: { token },
       })
       .then((res) => {

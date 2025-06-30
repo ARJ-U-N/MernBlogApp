@@ -16,7 +16,7 @@ const ViewAll = () => {
 
   const fetchData = () => {
     axios
-      .get(`http://localhost:3030/viewall?filter=${activeFilter}`, {
+      .get(`${process.env.REACT_APP_API_URL}/viewall?filter=${activeFilter}`, {
         headers: { token: token, "Content-Type": "application/json" },
       })
       .then((response) => {

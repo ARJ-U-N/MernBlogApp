@@ -27,7 +27,7 @@ const Signup1 = () => {
         password: input.password,
       };
       axios
-        .post("http://localhost:3030/signup", newInput)
+        .post(`${process.env.REACT_APP_API_URL}/signup`, newInput)
         .then((response) => {
           if (response.data.status === "Success") {
             alert("Registered successfully");

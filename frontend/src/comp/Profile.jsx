@@ -18,7 +18,7 @@ const Profile = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3030/profile", {
+      .get(`${process.env.REACT_APP_API_URL}/profile`, {
         headers: { token },
       })
       .then((res) => {
@@ -36,7 +36,7 @@ const Profile = () => {
 
     axios
       .put(
-        "http://localhost:3030/updateavatar",
+        `${process.env.REACT_APP_API_URL}/updateavatar`,
         { avatar },
         { headers: { token } }
       )
