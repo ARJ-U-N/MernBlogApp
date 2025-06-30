@@ -1,0 +1,46 @@
+.container1 {
+    padding: 30px;
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(50, 37, 61, 0.1);
+    max-width: 700px;
+    margin: 20px auto;
+    
+}
+
+.form-control1 {
+    border-radius: 25px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    /* Adds inside space for better typing feel */
+    border: 1.5px solid #ccc;
+    /* Light border */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth focus effect */
+    outline: none;
+    width: 100%;
+    /* Full width to fit container */
+    box-sizing: border-box;
+    /* Includes padding in width */
+}
+
+.btn-success {
+    border-radius: 20px;
+    align-items: center;
+   
+
+
+}
+.body{
+    background-color: rgb(12, 6, 39);
+}
+.text-centers{
+    color: wheat;
+    size: 30rem;
+    justify-content: center;
+    margin-left: 150px;
+}
+.form-label1{
+    color: wheat;
+    padding: 3px;
+}

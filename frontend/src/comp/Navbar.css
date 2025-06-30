@@ -1,0 +1,43 @@
+/* Navbar */
+.nav-tabs {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    padding: 0 15px;
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    color: #333 !important;
+    font-size: 1rem;
+    padding: 8px 15px !important;
+    transition: color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #666 !important;
+  }
+  
+  .nav-link.active {
+    color: #007bff !important;
+    font-weight: 500;
+  }
+  
+  .nav-link:disabled {
+    color: #6c757d !important;
+    cursor: not-allowed;
+  }
+  
+  /* Logout Button (Styled as a nav-link) */
+  .nav-item button.nav-link {
+    color: #333 !important;
+  }
+  
+  .nav-item button.nav-link:hover {
+    color: #666 !important;
+  }

@@ -1,0 +1,122 @@
+/* Global styles */
+body {
+  
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Sign In Container ===== */
+.signin-container {
+  max-width: 350px;
+  margin: 5vh auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== Sign Up Container ===== */
+.signup-container {
+  max-width: 350px;
+  margin: 5vh auto;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+}
+
+/* App title styling (used in both) */
+.app-title {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 2.5rem;
+  color: #262626;
+  margin-bottom: 20px;
+}
+
+/* Hide form labels (Instagram style) */
+.form-label {
+  display: none;
+}
+
+/* Input fields */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  background-color: #fafafa;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  border-color: #a8a8a8;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 8px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Primary button (e.g. Sign In / Register) */
+.btn-success {
+  background-color: #0095f6;
+  border: none;
+  color: white;
+}
+
+.btn-success:hover {
+  background-color: #007dc1;
+}
+
+/* Facebook or alternate auth */
+.btn-primary {
+  background-color: #385185;
+  border: none;
+  color: white;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #314a76;
+}
+
+/* Text link (e.g. go to Sign Up / Sign In) */
+.btn-link {
+  color: #385185;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Centered text at the bottom */
+.text-center {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Mobile responsive */
+@media (max-width: 400px) {
+  .signup-container,
+  .signin-container {
+    margin: 2vh auto;
+    padding: 30px 20px;
+  }
+}
+
